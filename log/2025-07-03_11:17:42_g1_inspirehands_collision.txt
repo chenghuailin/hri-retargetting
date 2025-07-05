@@ -1,0 +1,12 @@
+Frame 193 collision:  R_thumb_intermediate head_link
+Frame 194 collision:  R_thumb_intermediate head_link
+Frame 195 collision:  R_thumb_intermediate head_link
+Frame 206 collision:  R_thumb_intermediate head_link
+Frame 207 collision:  R_thumb_intermediate R_thumb_proximal head_link
+Frame 493 collision:  right_wrist_pitch_link L_index_intermediate
+Frame 506 collision:  L_thumb_distal right_wrist_pitch_link right_wrist_roll_link
+Frame 507 collision:  L_thumb_distal right_wrist_pitch_link right_wrist_roll_link
+Frame 508 collision:  L_thumb_distal right_wrist_pitch_link right_wrist_roll_link
+Frame 509 collision:  L_thumb_distal right_wrist_pitch_link
+Frame 751 collision:  L_hand_base_link L_thumb_proximal
+Frame 752 collision:  L_hand_base_link L_thumb_proximal

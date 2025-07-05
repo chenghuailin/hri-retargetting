@@ -1,0 +1,1586 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot name="galbot_one_charlie">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="omni_chassis_base_link">
+    <inertial>
+      <origin xyz="0.0031 0.00022 0.09001" rpy="0.0 0.0 0.0"/>
+      <mass value="25.85"/>
+      <inertia ixx="1.12288" ixy="0.00076" ixz="0.02446" iyy="1.15522" iyz="0.00086" izz="1.58321"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/chassis/omni_chassis_base_link.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.124"/>
+      </geometry>
+      <origin xyz="0.0 -0.2 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.124"/>
+      </geometry>
+      <origin xyz="0.0 0.2 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.23 0.0 0.19" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.23 0.0 0.08" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.124"/>
+      </geometry>
+      <origin xyz="-0.219 0.0 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.124"/>
+      </geometry>
+      <origin xyz="-0.157 -0.157 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.123"/>
+      </geometry>
+      <origin xyz="0.157 0.157 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.123"/>
+      </geometry>
+      <origin xyz="-0.157 0.157 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.123"/>
+      </geometry>
+      <origin xyz="0.157 -0.157 0.11" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="omni_chassis_leg_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="leg_base_link">
+    <inertial>
+      <origin xyz="0.00138 -0.01502 -0.0536" rpy="0.0 0.0 0.0"/>
+      <mass value="1.98"/>
+      <inertia ixx="0.01545" ixy="0.00015" ixz="-0.00028" iyy="0.01172" iyz="-0.00071" izz="0.00904"/>
+    </inertial>
+  </link>
+  <link name="leg_link1">
+    <inertial>
+      <origin xyz="0.23126 0.00187 -0.01166" rpy="0.0 0.0 0.0"/>
+      <mass value="13.38"/>
+      <inertia ixx="0.0554" ixy="0.00267" ixz="-0.03511" iyy="1.1704" iyz="-0.00012" izz="1.15967"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/leg/leg_link1.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.1 -0.03 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.22 -0.03 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.1"/>
+      </geometry>
+      <origin xyz="0.33 -0.03 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="leg_link2">
+    <inertial>
+      <origin xyz="0.1834 1e-05 0.01143" rpy="0.0 0.0 0.0"/>
+      <mass value="4.72"/>
+      <inertia ixx="0.04727" ixy="1e-05" ixz="0.01147" iyy="0.29026" iyz="1e-05" izz="0.25782"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/leg/leg_link2.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.13 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.26 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.4 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="leg_link3">
+    <inertial>
+      <origin xyz="4e-05 0.03287 -0.00556" rpy="0.0 0.0 0.0"/>
+      <mass value="6.04"/>
+      <inertia ixx="0.02981" ixy="1e-05" ixz="-0.0" iyy="0.02294" iyz="-0.00079" izz="0.03182"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/leg/leg_link3.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="leg_link4">
+    <inertial>
+      <origin xyz="6e-05 -3e-05 0.14494" rpy="0.0 0.0 0.0"/>
+      <mass value="0.55"/>
+      <inertia ixx="0.01267" ixy="0.0" ixz="1e-05" iyy="0.0127" iyz="-0.0" izz="0.00125"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/leg/leg_link4.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="leg_end_effector_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="torso_base_link">
+    <inertial>
+      <origin xyz="4e-05 0.00011 0.32719" rpy="0.0 0.0 0.0"/>
+      <mass value="6.68"/>
+      <inertia ixx="0.87119" ixy="9e-05" ixz="-0.00496" iyy="0.85457" iyz="0.00295" izz="0.0656"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/torso/torso_base_link.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.22"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.34" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.18" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.0 -0.06 0.38" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.14"/>
+      </geometry>
+      <origin xyz="0.0 0.06 0.38" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="torso_head_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="torso_right_arm_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="torso_left_arm_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="head_base_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.018397" ixy="-6.5897e-07" ixz="0.00030036" iyy="0.013058" iyz="0.00016843" izz="0.0082332"/>
+    </inertial>
+  </link>
+  <link name="head_link1">
+    <inertial>
+      <origin xyz="0.0 4e-05 -0.04238" rpy="0.0 0.0 0.0"/>
+      <mass value="0.41"/>
+      <inertia ixx="0.0011" ixy="-0.0" ixz="0.0" iyy="0.00113" iyz="8e-05" izz="0.00014"/>
+    </inertial>
+  </link>
+  <link name="head_link2">
+    <inertial>
+      <origin xyz="0.032 -0.03753 0.00162" rpy="0.0 0.0 0.0"/>
+      <mass value="0.75"/>
+      <inertia ixx="0.0038" ixy="-0.0007" ixz="0.0" iyy="0.00367" iyz="-0.0" izz="0.00538"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/head/head_link2.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.15"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="head_end_effector_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="right_arm_base_link">
+    <inertial>
+      <origin xyz="0.00037 6e-05 -0.11407" rpy="0.0 0.0 0.0"/>
+      <mass value="0.9"/>
+      <inertia ixx="0.01248" ixy="0.0" ixz="3e-05" iyy="0.01247" iyz="3e-05" izz="0.00056"/>
+    </inertial>
+  </link>
+  <link name="right_arm_link1">
+    <inertial>
+      <origin xyz="0.0 0.0065 -0.01459" rpy="0.0 0.0 0.0"/>
+      <mass value="1.48"/>
+      <inertia ixx="0.00378" ixy="0.0" ixz="0.0" iyy="0.0046" iyz="8e-05" izz="0.00217"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link1.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="right_arm_link2">
+    <inertial>
+      <origin xyz="-0.0008 -0.09873 0.00815" rpy="0.0 0.0 0.0"/>
+      <mass value="1.33"/>
+      <inertia ixx="0.01827" ixy="3e-05" ixz="1e-05" iyy="0.00232" iyz="0.0008" izz="0.01769"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link2.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.08"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <origin xyz="0.0 -0.12 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_link3">
+    <inertial>
+      <origin xyz="-0.00019 -0.0033 -0.04824" rpy="0.0 0.0 0.0"/>
+      <mass value="1.25"/>
+      <inertia ixx="0.00955" ixy="0.0" ixz="1e-05" iyy="0.00983" iyz="7e-05" izz="0.00151"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link3.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.06"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.12" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_link4">
+    <inertial>
+      <origin xyz="0.0 -0.06457 0.00899" rpy="0.0 0.0 0.0"/>
+      <mass value="0.8"/>
+      <inertia ixx="0.00529" ixy="0.0" ixz="0.0" iyy="0.0012" iyz="0.0003" izz="0.00488"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link4.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.06"/>
+      </geometry>
+      <origin xyz="0.0 -0.08 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_link5">
+    <inertial>
+      <origin xyz="0.00201 -0.00042 -0.14589" rpy="0.0 0.0 0.0"/>
+      <mass value="1.22"/>
+      <inertia ixx="0.03428" ixy="1e-05" ixz="0.00032" iyy="0.03366" iyz="5e-05" izz="0.00222"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link5.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.065"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.18" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.065"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.1" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_link6">
+    <inertial>
+      <origin xyz="0.0 0.01031 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.43"/>
+      <inertia ixx="0.00051" ixy="0.0" ixz="0.0" iyy="0.0007" iyz="0.0" izz="0.00091"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link6.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_link7">
+    <inertial>
+      <origin xyz="-0.03291 0.00799 -0.00131" rpy="0.0 0.0 0.0"/>
+      <mass value="0.6"/>
+      <inertia ixx="0.00124" ixy="0.0003" ixz="0.00013" iyy="0.00198" iyz="7e-05" izz="0.00164"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/right_arm_link7.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <origin xyz="-0.065 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.03" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 0.059 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 0.059 -0.026" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 0.059 0.026" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_arm_end_effector_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="right_arm_force_sensor_sim_view_frame">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="right_suction_cup_base_link">
+    <inertial>
+      <origin xyz="-4.0035e-05 -0.00015919 0.065665" rpy="0.0 0.0 0.0"/>
+      <mass value="0.36941"/>
+      <inertia ixx="0.00014564" ixy="3.5459e-07" ixz="-1.2386e-07" iyy="0.00016918" iyz="-4.0084e-07" izz="0.000219"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/suction_cup/suction_cup_base_link.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <origin xyz="-0.03 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.07 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.1 0.0 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.13 0.0 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_suction_cup_link1">
+    <inertial>
+      <origin xyz="0.037966 -3.0191e-05 -4.2414e-08" rpy="0.0 0.0 0.0"/>
+      <mass value="0.063856"/>
+      <inertia ixx="7.1717e-06" ixy="1.7711e-08" ixz="-3.6994e-11" iyy="8.0256e-06" iyz="4.7383e-09" izz="7.78e-06"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/suction_cup/suction_cup_link1.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0"/>
+      </geometry>
+      <origin xyz="-0.03 -0.085 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0"/>
+      </geometry>
+      <origin xyz="0.03 -0.085 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.0 -0.085 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.0 -0.02 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.015"/>
+      </geometry>
+      <origin xyz="-0.0 -0.04 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.015"/>
+      </geometry>
+      <origin xyz="-0.0 -0.06 -0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="right_suction_cup_tcp_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="right_flange_link">
+    <inertial>
+      <origin xyz="0.052829 -0.00096484 0.013285" rpy="0.0 0.0 0.0"/>
+      <mass value="0.25733"/>
+      <inertia ixx="0.0002175" ixy="-2.5433e-06" ixz="4.0586e-06" iyy="5.3894e-05" iyz="-1.8533e-06" izz="0.00025319"/>
+    </inertial>
+  </link>
+  <link name="left_arm_base_link">
+    <inertial>
+      <origin xyz="-0.00037 -6e-05 -0.11407" rpy="0.0 0.0 0.0"/>
+      <mass value="0.9"/>
+      <inertia ixx="0.01248" ixy="0.0" ixz="3e-05" iyy="0.01247" iyz="3e-05" izz="0.00056"/>
+    </inertial>
+  </link>
+  <link name="left_arm_link1">
+    <inertial>
+      <origin xyz="0.0 0.0065 -0.01459" rpy="0.0 0.0 0.0"/>
+      <mass value="1.48"/>
+      <inertia ixx="0.00378" ixy="0.0" ixz="0.0" iyy="0.0046" iyz="0.0002" izz="0.00217"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link1.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+  </link>
+  <link name="left_arm_link2">
+    <inertial>
+      <origin xyz="-0.0008 0.09873 0.00815" rpy="0.0 0.0 0.0"/>
+      <mass value="1.33"/>
+      <inertia ixx="0.01827" ixy="3e-05" ixz="3e-05" iyy="0.00232" iyz="0.00134" izz="0.01769"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link2.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.08"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <origin xyz="0.0 0.12 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_link3">
+    <inertial>
+      <origin xyz="0.00019 0.0033 -0.04824" rpy="0.0 0.0 0.0"/>
+      <mass value="1.25"/>
+      <inertia ixx="0.00955" ixy="0.0" ixz="1e-05" iyy="0.00983" iyz="7e-05" izz="0.00151"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link3.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.06"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.12" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.07"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_link4">
+    <inertial>
+      <origin xyz="0.0 0.06457 0.00899" rpy="0.0 0.0 0.0"/>
+      <mass value="0.8"/>
+      <inertia ixx="0.00529" ixy="0.0" ixz="0.0" iyy="0.0012" iyz="0.0003" izz="0.00488"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link4.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.06"/>
+      </geometry>
+      <origin xyz="0.0 0.08 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_link5">
+    <inertial>
+      <origin xyz="-0.00201 0.00042 -0.14589" rpy="0.0 0.0 0.0"/>
+      <mass value="1.22"/>
+      <inertia ixx="0.03428" ixy="1e-05" ixz="0.00039" iyy="0.03366" iyz="0.0001" izz="0.00222"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link5.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.065"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.18" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.065"/>
+      </geometry>
+      <origin xyz="0.0 0.0 -0.1" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_link6">
+    <inertial>
+      <origin xyz="0.0 -0.01031 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.43"/>
+      <inertia ixx="0.00051" ixy="0.0" ixz="0.0" iyy="0.0007" iyz="0.0" izz="0.00091"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link6.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_link7">
+    <inertial>
+      <origin xyz="-0.03291 0.00799 -0.00131" rpy="0.0 0.0 0.0"/>
+      <mass value="0.6"/>
+      <inertia ixx="0.00124" ixy="0.0" ixz="0.00012" iyy="0.00197" iyz="4e-05" izz="0.00165"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/arm/left_arm_link7.stl"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <origin xyz="-0.065 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.03" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 -0.059 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 -0.059 -0.026" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.02"/>
+      </geometry>
+      <origin xyz="-0.068 -0.059 0.026" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_arm_end_effector_mount_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="left_arm_force_sensor_sim_view_frame">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+  </link>
+  <link name="left_gripper_base_link">
+    <inertial>
+      <origin xyz="0.0875969515032359 -0.000593766922509439 -0.000273353044587243" rpy="0.0 0.0 0.0"/>
+      <mass value="0.229646651659589"/>
+      <inertia ixx="8.60029243295527e-05" ixy="2.00063024143341e-06" ixz="2.85398505671959e-06" iyy="7.73254340691918e-05" iyz="-1.0856442426917e-07" izz="9.78281466602487e-05"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_base.obj"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <origin xyz="-0.03 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.03"/>
+      </geometry>
+      <origin xyz="-0.07 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.035"/>
+      </geometry>
+      <origin xyz="-0.11 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_l1_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_l1.obj"/>
+      </geometry>
+      <origin xyz="0.121835 0.0 -0.02" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.02 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.02 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.035 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.035 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.05 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.05 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_l2_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_l2.obj"/>
+      </geometry>
+      <origin xyz="0.1368 0.0 -0.01" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.025 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.025 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.04 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.04 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.055 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.055 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_l3_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_l3.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 -0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_l4.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 -0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_l5.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 -0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 -0.008 -0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 0.0 -0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 0.008 -0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0407 0.002 -0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0407 -0.002 -0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0257 0.002 -0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0257 -0.002 -0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01035 0.0095 -0.0047" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01035 -0.0095 -0.0047" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="0.0 0.0095 0.001" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="0.0 -0.0095 0.001" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_r1_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_r1.obj"/>
+      </geometry>
+      <origin xyz="0.121835 0.0 0.02" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.02 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.02 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.035 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.035 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.05 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.05 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_r2_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_r2.obj"/>
+      </geometry>
+      <origin xyz="0.1368 0.0 0.01" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.025 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.025 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.04 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.04 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.055 -0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.055 0.0095 0.0" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_r3_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_r3.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_r4.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <mesh filename="meshes/gripper/new_gripper_r5.obj"/>
+      </geometry>
+      <origin xyz="0.18682 0.0 0.02125" rpy="0.0 0.0 0.0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 -0.008 0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 0.0 0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.004"/>
+      </geometry>
+      <origin xyz="-0.0547 0.008 0.0164" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0407 0.002 0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0407 -0.002 0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0257 0.002 0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.01"/>
+      </geometry>
+      <origin xyz="-0.0257 -0.002 0.0104" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01035 0.0095 0.0047" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="-0.01035 -0.0095 0.0047" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="0.0 0.0095 -0.001" rpy="0.0 -0.0 0.0"/>
+    </collision>
+    <collision>
+      <geometry>
+        <sphere radius="0.0075"/>
+      </geometry>
+      <origin xyz="0.0 -0.0095 -0.001" rpy="0.0 -0.0 0.0"/>
+    </collision>
+  </link>
+  <link name="left_gripper_left_link">
+    <inertial>
+      <origin xyz="-0.0231481638496937 -4.90112376816481e-07 -0.000267991935875532" rpy="0.0 0.0 0.0"/>
+      <mass value="0.00675449578859124"/>
+      <inertia ixx="3.19945619554153e-07" ixy="-7.76829664652689e-12" ixz="-3.91342467850705e-07" iyy="1.5976052028241e-06" iyz="2.16781299849398e-11" izz="1.50158040800935e-06"/>
+    </inertial>
+  </link>
+  <link name="left_gripper_right_link">
+    <inertial>
+      <origin xyz="-0.0231481638496943 -4.90112376734401e-07 -0.000267991935824489" rpy="0.0 0.0 0.0"/>
+      <mass value="0.00675449578859123"/>
+      <inertia ixx="3.19945619552427e-07" ixy="-7.76829655500751e-12" ixz="-3.91342467848098e-07" iyy="1.5976052028241e-06" iyz="2.16781300075729e-11" izz="1.50158040801108e-06"/>
+    </inertial>
+  </link>
+  <link name="left_gripper_tcp_link">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0"/>
+      <mass value="1.0"/>
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+    </inertial>
+  </link>
+  <link name="left_flange_link">
+    <inertial>
+      <origin xyz="0.052829 -0.00096484 0.013285" rpy="0.0 0.0 0.0"/>
+      <mass value="0.25733"/>
+      <inertia ixx="0.0002175" ixy="-2.5433e-06" ixz="4.0586e-06" iyy="5.3894e-05" iyz="-1.8533e-06" izz="0.00025319"/>
+    </inertial>
+  </link>
+  <joint name="omni_chassis_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="omni_chassis_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="omni_chassis_leg_mount_joint" type="fixed">
+    <parent link="omni_chassis_base_link"/>
+    <child link="omni_chassis_leg_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.134 0.0 0.13" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="leg_joint" type="fixed">
+    <parent link="omni_chassis_leg_mount_link"/>
+    <child link="leg_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="leg_joint1" type="revolute">
+    <limit effort="169.0" velocity="1.0" lower="0.0" upper="0.994837674"/>
+    <parent link="leg_base_link"/>
+    <child link="leg_link1"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948968 -0.3850196325897934 -3.141592653589793"/>
+  </joint>
+  <joint name="leg_joint2" type="revolute">
+    <limit effort="169.0" velocity="1.0" lower="0.0" upper="3.05"/>
+    <parent link="leg_link1"/>
+    <child link="leg_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.45 0.0 0.0" rpy="-3.141592653589793 0.0 2.756573021"/>
+  </joint>
+  <joint name="leg_joint3" type="revolute">
+    <limit effort="84.0" velocity="1.0" lower="0.0" upper="2.35619449"/>
+    <parent link="leg_link2"/>
+    <child link="leg_link3"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.39 0.0 0.0" rpy="-3.141592653589793 0.0 -3.141592653589793"/>
+  </joint>
+  <joint name="leg_joint4" type="revolute">
+    <limit effort="30.0" velocity="1.0" lower="-1.570796327" upper="1.570796327"/>
+    <parent link="leg_link3"/>
+    <child link="leg_link4"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 0.0 -3.141592653589793"/>
+  </joint>
+  <joint name="leg_end_effector_mount_joint" type="fixed">
+    <parent link="leg_link4"/>
+    <child link="leg_end_effector_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="torso_joint" type="fixed">
+    <parent link="leg_end_effector_mount_link"/>
+    <child link="torso_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="torso_head_mount_joint" type="fixed">
+    <parent link="torso_base_link"/>
+    <child link="torso_head_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.0081669 5e-05 0.58394" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="torso_right_arm_mount_joint" type="fixed">
+    <parent link="torso_base_link"/>
+    <child link="torso_right_arm_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 -0.206 0.39599" rpy="-1.5707963267948966 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="torso_left_arm_mount_joint" type="fixed">
+    <parent link="torso_base_link"/>
+    <child link="torso_left_arm_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.206 0.39599" rpy="1.5707963267948966 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="head_joint" type="fixed">
+    <parent link="torso_head_mount_link"/>
+    <child link="head_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="head_joint1" type="fixed">
+    <limit effort="4.0" velocity="1.5" lower="-1.570796327" upper="1.570796327"/>
+    <parent link="head_base_link"/>
+    <child link="head_link1"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="head_joint2" type="fixed">
+    <limit effort="4.0" velocity="1.5" lower="-0.366519143" upper="0.366519143"/>
+    <parent link="head_link1"/>
+    <child link="head_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707963267948966 0.0 0.0"/>
+  </joint>
+  <joint name="head_end_effector_mount_joint" type="fixed">
+    <parent link="head_link2"/>
+    <child link="head_end_effector_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_arm_joint" type="fixed">
+    <parent link="torso_right_arm_mount_link"/>
+    <child link="right_arm_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="right_arm_joint1" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="60.0" velocity="1.5" lower="-3.05" upper="3.05"/>
+    <parent link="right_arm_base_link"/>
+    <child link="right_arm_link1"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.6499999999999999"/>
+  </joint>
+  <joint name="right_arm_joint2" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="60.0" velocity="1.5" lower="-1.5707963267948966" upper="1.7"/>
+    <parent link="right_arm_link1"/>
+    <child link="right_arm_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707963267948963 -1.26 3.141592653589793"/>
+  </joint>
+  <joint name="right_arm_joint3" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="30.0" velocity="1.5" lower="-2.9" upper="2.9"/>
+    <parent link="right_arm_link2"/>
+    <child link="right_arm_link3"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 -0.35 0.0" rpy="-1.5707963267948966 -1.4707963267948971 3.141592653589793"/>
+  </joint>
+  <joint name="right_arm_joint4" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="30.0" velocity="1.5" lower="-2.1" upper="2.1"/>
+    <parent link="right_arm_link3"/>
+    <child link="right_arm_link4"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948957 1.5058926535897934 -1.064573695336043e-15"/>
+  </joint>
+  <joint name="right_arm_joint5" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-2.9" upper="2.9"/>
+    <parent link="right_arm_link4"/>
+    <child link="right_arm_link5"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 -0.36 0.0" rpy="-1.5707963267948961 1.441592653589793 -3.1415926535897927"/>
+  </joint>
+  <joint name="right_arm_joint6" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-0.785398163" upper="0.785398163"/>
+    <parent link="right_arm_link5"/>
+    <child link="right_arm_link6"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 1.4597963267948968 -1.8369701987210302e-16"/>
+  </joint>
+  <joint name="right_arm_joint7" type="fixed">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-1.4" upper="1.4"/>
+    <parent link="right_arm_link6"/>
+    <child link="right_arm_link7"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707963267948966 -0.8996 -7.709908062174648e-17"/>
+  </joint>
+  <joint name="right_arm_end_effector_mount_joint" type="fixed">
+    <parent link="right_arm_link7"/>
+    <child link="right_arm_end_effector_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.083 0.0 0.0" rpy="1.5707963267948966 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="right_arm_force_sensor_sim_view_joint" type="fixed">
+    <parent link="right_arm_end_effector_mount_link"/>
+    <child link="right_arm_force_sensor_sim_view_frame"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.013 0.0 0.0" rpy="0.0 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="right_suction_cup_joint" type="fixed">
+    <parent link="right_arm_end_effector_mount_link"/>
+    <child link="right_suction_cup_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948968 1.2246467991473532e-16 -3.141592653589793"/>
+  </joint>
+  <joint name="right_suction_cup_joint1" type="fixed">
+    <limit effort="1.0" velocity="1.570796327" lower="0.0" upper="1.570796327"/>
+    <parent link="right_suction_cup_base_link"/>
+    <child link="right_suction_cup_link1"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="-0.1428 0.0 0.0" rpy="0.0 0.0 -1.5707963267948966"/>
+  </joint>
+  <joint name="right_suction_cup_tcp_joint" type="fixed">
+    <parent link="right_suction_cup_link1"/>
+    <child link="right_suction_cup_tcp_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 -0.079807 0.0" rpy="1.5707963267948966 0.0 -1.5707963267948966"/>
+  </joint>
+  <joint name="right_joint" type="fixed">
+    <parent link="right_arm_link7"/>
+    <child link="right_flange_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_arm_joint" type="fixed">
+    <parent link="torso_left_arm_mount_link"/>
+    <child link="left_arm_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_arm_joint1" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="60.0" velocity="1.5" lower="-3.05" upper="3.05"/>
+    <parent link="left_arm_base_link"/>
+    <child link="left_arm_link1"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_arm_joint2" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="60.0" velocity="1.5" lower="-1.7" upper="1.5707963267948966"/>
+    <parent link="left_arm_link1"/>
+    <child link="left_arm_link2"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="left_arm_joint3" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="30.0" velocity="1.5" lower="-2.9" upper="2.9"/>
+    <parent link="left_arm_link2"/>
+    <child link="left_arm_link3"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.35 0.0" rpy="-1.5707963267948966 -1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="left_arm_joint4" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="30.0" velocity="1.5" lower="-2.1" upper="2.1"/>
+    <parent link="left_arm_link3"/>
+    <child link="left_arm_link4"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 0.0 -3.141592653589793"/>
+  </joint>
+  <joint name="left_arm_joint5" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-2.9" upper="2.9"/>
+    <parent link="left_arm_link4"/>
+    <child link="left_arm_link5"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.36 0.0" rpy="1.5707963267948968 1.2246467991473532e-16 -3.141592653589793"/>
+  </joint>
+  <joint name="left_arm_joint6" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-0.785398163" upper="0.785398163"/>
+    <parent link="left_arm_link5"/>
+    <child link="left_arm_link6"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="left_arm_joint7" type="revolute">
+    <dynamics damping="0.0" friction="0.0"/>
+    <limit effort="10.0" velocity="1.5" lower="-1.4" upper="1.4"/>
+    <parent link="left_arm_link6"/>
+    <child link="left_arm_link7"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="0.0 0.0 0.0" rpy="1.5707963267948966 0.0 0.0"/>
+  </joint>
+  <joint name="left_arm_end_effector_mount_joint" type="fixed">
+    <parent link="left_arm_link7"/>
+    <child link="left_arm_end_effector_mount_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.083 0.0 0.0" rpy="-1.5707963267948966 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="left_arm_force_sensor_sim_view_joint" type="fixed">
+    <parent link="left_arm_end_effector_mount_link"/>
+    <child link="left_arm_force_sensor_sim_view_frame"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.013 0.0 0.0" rpy="3.141592653589793 -1.5707963267948966 0.0"/>
+  </joint>
+  <joint name="left_gripper_joint" type="fixed">
+    <parent link="left_arm_end_effector_mount_link"/>
+    <child link="left_gripper_base_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="-1.5707963267948968 1.2246467991473532e-16 -3.141592653589793"/>
+  </joint>
+  <joint name="left_gripper_l1_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_l1_link"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="-0.121835 0.0 0.02" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_l2_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_l2_link"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="-0.1368 0.0 0.01" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_l3_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_l1_link"/>
+    <child link="left_gripper_l3_link"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="-0.064985 0.0 0.00125" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_r1_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_r1_link"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="-0.121835 0.0 -0.02" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_r2_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_r2_link"/>
+    <axis xyz=" 0. -1.  0."/>
+    <origin xyz="-0.1368 0.0 -0.01" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_r3_joint" type="revolute">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="3.0"/>
+    <parent link="left_gripper_r1_link"/>
+    <child link="left_gripper_r3_link"/>
+    <axis xyz="0. 1. 0."/>
+    <origin xyz="-0.064985 0.0 -0.00125" rpy="0.0 0.0 0.0"/>
+  </joint>
+  <joint name="left_gripper_left_joint" type="fixed">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="0.045"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_left_link"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="-0.23074 0.0 0.0" rpy="3.141592653589793 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="left_gripper_right_joint" type="fixed">
+    <limit effort="2.0" velocity="0.045" lower="0.0" upper="0.045"/>
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_right_link"/>
+    <axis xyz="0. 0. 1."/>
+    <origin xyz="-0.23074 0.0 0.0" rpy="0.0 0.0 3.141592653589793"/>
+  </joint>
+  <joint name="left_gripper_tcp_joint" type="fixed">
+    <parent link="left_gripper_base_link"/>
+    <child link="left_gripper_tcp_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="-0.23074 0.0 0.0" rpy="-1.5707963267948968 1.2246467991473532e-16 -3.141592653589793"/>
+  </joint>
+  <joint name="left_joint" type="fixed">
+    <parent link="left_arm_link7"/>
+    <child link="left_flange_link"/>
+    <axis xyz="1. 0. 0."/>
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+  </joint>
+</robot>

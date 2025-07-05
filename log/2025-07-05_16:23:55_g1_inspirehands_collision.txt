@@ -1,0 +1,220 @@
+Frame 198 collision:  right_wrist_pitch_link torso_link
+Frame 199 collision:  right_wrist_pitch_link torso_link
+Frame 200 collision:  right_wrist_pitch_link torso_link
+Frame 201 collision:  head_link right_wrist_pitch_link torso_link
+Frame 202 collision:  head_link right_wrist_pitch_link torso_link
+Frame 203 collision:  head_link right_wrist_pitch_link torso_link
+Frame 204 collision:  head_link right_wrist_pitch_link torso_link
+Frame 205 collision:  head_link right_wrist_pitch_link torso_link
+Frame 206 collision:  head_link right_wrist_pitch_link torso_link
+Frame 207 collision:  head_link right_wrist_pitch_link torso_link
+Frame 208 collision:  head_link right_wrist_pitch_link torso_link
+Frame 209 collision:  head_link right_wrist_pitch_link torso_link
+Frame 210 collision:  head_link right_wrist_pitch_link torso_link
+Frame 211 collision:  head_link right_wrist_pitch_link torso_link
+Frame 212 collision:  head_link right_wrist_pitch_link torso_link
+Frame 213 collision:  head_link right_wrist_pitch_link torso_link
+Frame 214 collision:  head_link right_wrist_roll_link right_wrist_pitch_link torso_link logo_link
+Frame 215 collision:  head_link right_wrist_roll_link right_wrist_pitch_link torso_link logo_link
+Frame 216 collision:  head_link right_wrist_roll_link right_wrist_pitch_link torso_link logo_link
+Frame 217 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 218 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 219 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 220 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 221 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 222 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 223 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 224 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 225 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 226 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 227 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 228 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 229 collision:  right_wrist_roll_link head_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 230 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 231 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 232 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 233 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 234 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 235 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 236 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 237 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 238 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 239 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 240 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 241 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 242 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 243 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 244 collision:  right_wrist_roll_link right_wrist_pitch_link torso_link right_wrist_yaw_link logo_link
+Frame 245 collision:  right_wrist_pitch_link logo_link right_wrist_roll_link torso_link
+Frame 246 collision:  right_wrist_pitch_link logo_link right_wrist_roll_link torso_link
+Frame 247 collision:  right_wrist_pitch_link logo_link right_wrist_roll_link torso_link
+Frame 248 collision:  right_wrist_pitch_link logo_link right_wrist_roll_link torso_link
+Frame 249 collision:  right_wrist_pitch_link torso_link
+Frame 434 collision:  left_shoulder_yaw_link torso_link
+Frame 435 collision:  left_elbow_link left_shoulder_yaw_link torso_link
+Frame 436 collision:  left_elbow_link left_shoulder_yaw_link torso_link
+Frame 437 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 438 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 439 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 440 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 441 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 442 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 443 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 444 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 445 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 446 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 447 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 448 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 449 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 450 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 451 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 452 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 453 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 454 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 455 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 456 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 457 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 458 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 459 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 460 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 461 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 462 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 463 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 464 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 465 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 466 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 467 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 468 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 469 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 470 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 471 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 472 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 473 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 474 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 475 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 476 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 477 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 478 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 479 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 480 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 481 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 482 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 483 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 484 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 485 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 486 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 487 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 488 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 489 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 490 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 491 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 492 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 493 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 494 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 495 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 496 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 497 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 498 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 499 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 500 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 501 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 502 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 503 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 504 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 505 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 506 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 507 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 508 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 509 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 510 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 511 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 512 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 513 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 514 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 515 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 516 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 517 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 518 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 519 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 520 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 521 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 522 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 523 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 524 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 525 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 526 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 527 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 528 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 529 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 530 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 531 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 532 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 533 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 534 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 535 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 536 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 537 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 538 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 539 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 540 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 541 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 542 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 543 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 544 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 545 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 546 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 547 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 548 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 549 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 550 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 551 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 552 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 553 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 554 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 555 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 556 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 557 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 558 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 559 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 560 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 561 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 562 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 563 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 564 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 565 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 566 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 567 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 568 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 569 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 570 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 571 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 572 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 573 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 574 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 575 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 576 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 577 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 578 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 579 collision:  left_elbow_link logo_link left_shoulder_yaw_link torso_link
+Frame 580 collision:  left_elbow_link left_shoulder_yaw_link torso_link
+Frame 581 collision:  L_thumb_intermediate L_thumb_distal right_elbow_link left_shoulder_yaw_link torso_link left_elbow_link
+Frame 582 collision:  L_thumb_intermediate L_thumb_distal right_elbow_link left_shoulder_yaw_link torso_link
+Frame 583 collision:  L_thumb_intermediate L_thumb_distal right_elbow_link left_shoulder_yaw_link torso_link
+Frame 584 collision:  L_thumb_intermediate right_elbow_link L_thumb_distal
+Frame 585 collision:  L_thumb_intermediate right_elbow_link
+Frame 594 collision:  L_thumb_intermediate right_elbow_link
+Frame 595 collision:  L_thumb_intermediate right_elbow_link
+Frame 825 collision:  L_thumb_proximal L_hand_base_link
+Frame 826 collision:  L_thumb_proximal L_hand_base_link
+Frame 827 collision:  L_thumb_proximal L_hand_base_link
+Frame 828 collision:  L_thumb_proximal L_hand_base_link
+Frame 829 collision:  L_thumb_proximal L_hand_base_link
+Frame 830 collision:  L_thumb_proximal L_hand_base_link
+Frame 831 collision:  L_thumb_proximal L_hand_base_link
+Frame 832 collision:  L_thumb_proximal L_hand_base_link
+Frame 833 collision:  L_thumb_proximal L_hand_base_link
+Frame 834 collision:  L_thumb_proximal L_hand_base_link
+Frame 835 collision:  L_thumb_proximal L_hand_base_link
+Frame 836 collision:  L_thumb_proximal L_hand_base_link
+Frame 869 collision:  L_thumb_proximal L_hand_base_link
+Frame 870 collision:  L_thumb_proximal L_hand_base_link

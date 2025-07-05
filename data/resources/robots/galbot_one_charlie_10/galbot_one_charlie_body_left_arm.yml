@@ -1,0 +1,59 @@
+robot_cfg:
+  kinematics:
+    use_usd_kinematics: false
+    # usd_path: "robot/galbot_one_charlie_body_left_arm/galbot_one_charlie_body_left_arm.usd"
+    # usd_robot_root: "/galbot_one_charlie_body_left_arm"
+    # isaac_usd_path: ""
+    # usd_flip_joint_limits: [ ]
+
+    urdf_path: "galbot_one_charlie_10.urdf"
+    asset_root_path: "."
+    external_asset_path: ""
+    external_robot_configs_path: ""
+    base_link: "base_link"
+    ee_link: "left_gripper_tcp_link"
+    link_names: []
+    lock_joints: {"leg_joint1": 0.3, "leg_joint2": 1.2, "leg_joint3": 0.85, "leg_joint4": 0.0, "right_arm_joint1": -0.05815, "right_arm_joint2": -1.4786, "right_arm_joint3": 0.1, "right_arm_joint4": 2.098, "right_arm_joint5": -1.4, "right_arm_joint6": 0.01, "right_arm_joint7": -1.1, "left_gripper_l1_joint": 0.0, "left_gripper_l2_joint": 0.0, "left_gripper_l3_joint": 0.0, "left_gripper_r1_joint": 0.0, "left_gripper_r2_joint": 0.0, "left_gripper_r3_joint": 0.0}
+    extra_links:
+    collision_link_names: ["omni_chassis_base_link", "leg_link1", "leg_link2", "torso_base_link", "left_arm_link2", "left_arm_link3", "left_arm_link4", "left_arm_link5", "left_arm_link6", "left_arm_link7", "left_gripper_base_link", "left_gripper_l1_link", "left_gripper_l2_link", "left_gripper_l3_link", "left_gripper_r1_link", "left_gripper_r2_link", "left_gripper_r3_link", "right_arm_link2", "right_arm_link3", "right_arm_link4", "right_arm_link5", "right_arm_link6", "right_arm_link7", "right_suction_cup_base_link", "right_suction_cup_link1"]
+    collision_spheres: "galbot_one_charlie_body_spheres.yml"
+    collision_sphere_buffer: 0.004
+    extra_collision_spheres: {}
+    self_collision_ignore: {"omni_chassis_base_link": ["leg_link1", "leg_link2"], 
+                            "leg_link1": ["leg_link2"], 
+                            "leg_link2": ["torso_base_link"], 
+                            "torso_base_link": ["left_arm_link2", "left_arm_link3", "right_arm_link2", "right_arm_link3", 'head_link2'], 
+                            "left_arm_link2": ["left_arm_link3", "left_arm_link4", "left_arm_link5"], 
+                            "left_arm_link3": ["left_arm_link4", "left_arm_link5"], 
+                            "left_arm_link4": ["left_arm_link5", "left_arm_link6"], 
+                            "left_arm_link5": ["left_arm_link6", "left_arm_link7"], 
+                            "left_arm_link6": ["left_arm_link7", "left_arm_end_effector_mount_link"], 
+                            "left_arm_link7": ["left_arm_end_effector_mount_link", "left_gripper_base_link"], 
+                            "left_arm_end_effector_mount_link": ["left_gripper_base_link", "left_gripper_left_link", "left_gripper_right_link"], 
+                            "left_gripper_base_link": ["left_gripper_l1_link", "left_gripper_l2_link", "left_gripper_l3_link", "left_gripper_r1_link", "left_gripper_r2_link", "left_gripper_r3_link", ], 
+                            "left_gripper_l1_link": ["left_gripper_l2_link", "left_gripper_l3_link", "left_gripper_r1_link", "left_gripper_r2_link", "left_gripper_r3_link"],
+                            "left_gripper_l2_link": ["left_gripper_l3_link", "left_gripper_r1_link", "left_gripper_r2_link", "left_gripper_r3_link"],
+                            "left_gripper_l3_link": ["left_gripper_r1_link", "left_gripper_r2_link", "left_gripper_r3_link"],
+                            "left_gripper_r1_link": ["left_gripper_r2_link", "left_gripper_r3_link"],
+                            "left_gripper_r2_link": ["left_gripper_r3_link"],
+                            "left_gripper_r3_link": [],
+                            "right_arm_link2": ["right_arm_link3", "right_arm_link4", "right_arm_link5"], 
+                            "right_arm_link3": ["right_arm_link4", "right_arm_link5"], 
+                            "right_arm_link4": ["right_arm_link5", "right_arm_link6"], 
+                            "right_arm_link5": ["right_arm_link6", "right_arm_link7"], 
+                            "right_arm_link6": ["right_arm_link5", "right_arm_link7"], 
+                            "right_arm_link7": ["right_suction_cup_base_link", "right_arm_end_effector_mount_link"], 
+                            "right_arm_end_effector_mount_link": ["right_suction_cup_base_link", "right_suction_cup_link1"], 
+                            "right_suction_cup_base_link": ["right_suction_cup_link1"], 
+                            "right_suction_cup_link1": []}
+    self_collision_buffer: {"omni_chassis_base_link": 0.0, "leg_link1": 0.0, "leg_link2": 0.0, "torso_base_link": 0.0, "left_arm_link2": 0.0, "left_arm_link3": 0.0, "left_arm_link4": 0.0, "left_arm_link5": 0.0, "left_arm_link6": 0.0, "left_arm_link7": 0.0, "left_arm_end_effector_mount_link": 0.0, "left_gripper_base_link": 0.0, "left_gripper_left_link": 0.0, "left_gripper_right_link": 0.0, "right_arm_link2": 0.0, "right_arm_link3": 0.0, "right_arm_link4": 0.0, "right_arm_link5": 0.0, "right_arm_link6": 0.0, "right_arm_link7": 0.0, "right_arm_end_effector_mount_link": 0.0, "right_suction_cup_base_link": 0.0, "right_suction_cup_link1": 0.0}
+
+    use_global_cumul: true
+    mesh_link_names: ["omni_chassis_base_link", "leg_link1", "leg_link2", "torso_base_link", "left_arm_link1", "left_arm_link2", "left_arm_link3", "left_arm_link4", "left_arm_link5", "left_arm_link6", "left_arm_link7", "left_arm_end_effector_mount_link", "left_gripper_base_link", "left_gripper_left_link", "left_gripper_right_link", "right_arm_link2", "right_arm_link3", "right_arm_link4", "right_arm_link5", "right_arm_link6", "right_arm_link7", "right_arm_end_effector_mount_link", "right_suction_cup_base_link", "right_suction_cup_link1"]
+    cspace:
+      joint_names: ["leg_joint1", "leg_joint2", "leg_joint3", "leg_joint4", "left_arm_joint1", "left_arm_joint2", "left_arm_joint3", "left_arm_joint4", "left_arm_joint5", "left_arm_joint6", "left_arm_joint7", "right_arm_joint1", "right_arm_joint2", "right_arm_joint3", "right_arm_joint4", "right_arm_joint5", "right_arm_joint6", "right_arm_joint7", "left_gripper_l1_joint", "left_gripper_l2_joint", "left_gripper_l3_joint", "left_gripper_r1_joint", "left_gripper_r2_joint", "left_gripper_r3_joint"]
+      retract_config: [0.3, 1.2, 0.85, 0.0, 0.05815, 1.4786, -0.1, -2.098, 1.4, -0.01, 1.1, -0.05815, -1.4786, 0.1, 2.098, -1.4, 0.01, -1.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      null_space_weight: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      cspace_distance_weight: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      max_acceleration: [0.4, 0.4, 0.4, 0.4, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      max_jerk: [0.8, 0.8, 0.8, 0.8, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]

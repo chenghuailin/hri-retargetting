@@ -1,0 +1,74 @@
+Frame 466 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link
+Frame 467 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link
+Frame 468 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 469 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 470 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 471 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 472 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 473 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 474 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 475 collision:  right_hip_yaw_link left_hip_yaw_link
+Frame 516 collision:  right_hip_yaw_link left_knee_link
+Frame 517 collision:  right_hip_yaw_link left_hip_yaw_link left_knee_link
+Frame 518 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 519 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 520 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 521 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 522 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 523 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 524 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 525 collision:  L_thumb_intermediate L_thumb_proximal_base left_hip_roll_link right_knee_link right_hip_yaw_link left_hip_yaw_link L_thumb_proximal L_hand_base_link
+Frame 526 collision:  left_hip_yaw_link right_knee_link
+Frame 527 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_distal L_thumb_proximal
+Frame 532 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 533 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_distal L_thumb_proximal
+Frame 534 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_distal L_thumb_proximal
+Frame 535 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_distal L_thumb_proximal
+Frame 536 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_distal L_thumb_proximal
+Frame 537 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 538 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 539 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 540 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 541 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 542 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 543 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 544 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 545 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 546 collision:  right_hip_roll_link L_thumb_intermediate L_thumb_proximal
+Frame 559 collision:  right_hip_yaw_link left_hip_yaw_link
+Frame 560 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link
+Frame 561 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 562 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 563 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 564 collision:  right_hip_yaw_link left_hip_yaw_link right_knee_link left_knee_link
+Frame 565 collision:  left_hip_yaw_link right_knee_link left_knee_link
+Frame 1421 collision:  L_hand_base_link L_thumb_proximal
+Frame 1422 collision:  L_hand_base_link L_thumb_proximal
+Frame 1423 collision:  L_hand_base_link L_thumb_proximal
+Frame 1424 collision:  L_hand_base_link L_thumb_proximal
+Frame 1449 collision:  L_hand_base_link L_thumb_proximal
+Frame 1450 collision:  L_hand_base_link L_thumb_proximal
+Frame 1451 collision:  L_hand_base_link L_thumb_proximal
+Frame 1452 collision:  L_hand_base_link L_thumb_proximal
+Frame 1453 collision:  L_hand_base_link L_thumb_proximal
+Frame 1454 collision:  L_hand_base_link L_thumb_proximal
+Frame 1472 collision:  L_hand_base_link L_thumb_proximal
+Frame 1473 collision:  L_hand_base_link L_thumb_proximal
+Frame 1506 collision:  L_hand_base_link L_thumb_proximal
+Frame 1507 collision:  L_hand_base_link L_thumb_proximal
+Frame 1508 collision:  L_hand_base_link L_thumb_proximal
+Frame 1509 collision:  L_hand_base_link L_thumb_proximal
+Frame 1510 collision:  L_hand_base_link L_thumb_proximal
+Frame 1511 collision:  L_hand_base_link L_thumb_proximal
+Frame 1512 collision:  L_hand_base_link L_thumb_proximal
+Frame 1518 collision:  L_hand_base_link L_thumb_proximal
+Frame 1519 collision:  L_hand_base_link L_thumb_proximal
+Frame 1520 collision:  L_hand_base_link L_thumb_proximal
+Frame 1521 collision:  L_hand_base_link L_thumb_proximal
+Frame 1522 collision:  L_hand_base_link L_thumb_proximal
+Frame 1523 collision:  L_hand_base_link L_thumb_proximal
+Frame 1524 collision:  L_hand_base_link L_thumb_proximal
+Frame 1525 collision:  L_hand_base_link L_thumb_proximal
+Frame 1526 collision:  L_hand_base_link L_thumb_proximal
+Frame 1527 collision:  L_hand_base_link L_thumb_proximal
+Frame 1528 collision:  L_hand_base_link L_thumb_proximal

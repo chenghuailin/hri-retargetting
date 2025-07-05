@@ -1,0 +1,8 @@
+[front_camera]
+translation = [ 0.07861340810740003, -0.0547428595321367, 0.02302226585693884,]
+rotation = [ -0.19007611571384272, 0.6741846197637663, 0.17399742539881335, 0.692149597026328,]
+from_link = "head_link2"
+to_link = "front_head_camera_color_optical_frame"
+serial_number = "233622079310"
+module_sn = "T001AACCAAAE0014"
+

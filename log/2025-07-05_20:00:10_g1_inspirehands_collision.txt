@@ -1,0 +1,12 @@
+Frame 7 collision:  L_thumb_proximal L_hand_base_link
+Frame 8 collision:  L_thumb_proximal L_hand_base_link
+Frame 9 collision:  L_thumb_proximal L_hand_base_link
+Frame 10 collision:  L_thumb_proximal L_hand_base_link
+Frame 24 collision:  L_thumb_proximal L_hand_base_link
+Frame 25 collision:  L_thumb_proximal L_hand_base_link
+Frame 26 collision:  L_thumb_proximal L_hand_base_link
+Frame 27 collision:  L_thumb_proximal L_hand_base_link
+Frame 28 collision:  L_thumb_proximal L_hand_base_link
+Frame 29 collision:  L_thumb_proximal L_hand_base_link
+Frame 30 collision:  L_thumb_proximal L_hand_base_link
+Frame 31 collision:  L_thumb_proximal L_hand_base_link
