@@ -147,7 +147,9 @@ class G1_Base_Motion_Model(nn.Module):
         # gt_pos = self.gt_joint_positions @ self.scale + torch.clamp(self.root_diff, -0.1, 0.1)
         # print(self.scale, self.root_diff)
         for joint_corr in self.joint_correspondence:
-            joint_global_position_loss += ((pred_link_global[:, joint_corr[1]][:, :3, 3] - self.gt_joint_positions[:, joint_corr[0]])**2).sum(dim=-1).mean() * joint_corr[2]
+            joint_global_position_loss += (
+                (pred_link_global[:, joint_corr[1]][:, :3, 3] - self.gt_joint_positions[:, joint_corr[0]])**2
+            ).sum(dim=-1).mean() * joint_corr[2]
         return joint_global_position_loss
     
 
