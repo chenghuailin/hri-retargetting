@@ -38,8 +38,8 @@ default_urdf_dir = os.path.join(DATA_ROOT,"resources/robots/g1_inspirehands")
 
 if __name__ == "__main__":
 
-    if len(sys.argv) != 2:
-        print('Call the function with the BVH file')
+    if len(sys.argv) != 3:
+        print('Call the function with the BVH file and the corresponding suffix')
         quit()
 
     filename = sys.argv[1]
@@ -63,6 +63,8 @@ if __name__ == "__main__":
     model.train()
 
     history_losses = []
+    # best_loss = float('inf')
+    # best_model_state = None
     
     pbar = tqdm(range(2000))
     for epoch in pbar:
@@ -76,16 +78,20 @@ if __name__ == "__main__":
         joint_global_position_loss = model.retarget_joint_loss()
         dof_limit_loss = model.dof_limit_loss()
         collision_loss = model.collision_loss()
+        constraint_loss = model.constraint_loss_Jappelio_rays()
+        
+        # orientation_loss = model.orientation_loss()
         # init_angle_loss = model.init_angle_loss()
         # elbow_loss = model.elbow_loss()
         
         loss_dict = {
-            "joint_global_position_loss": [1.0, joint_global_position_loss],
+            "joint_global_position_loss": [2.0, joint_global_position_loss],
             "joint_local_velocity_loss": [1.0, joint_local_velocity_loss],
             "joint_local_accel_loss": [0.0, joint_local_accel_loss],
             "dof_limit_loss": [1.0, dof_limit_loss],
-            # "hand_orientation_loss": [0.3, hand_orientation_loss],
+            # "orientation_loss": [0.3, orientation_loss],
             "collision_loss": [1.0, collision_loss],
+            "constraint_loss": [1.0, constraint_loss],
         }
 
         loss = 0
@@ -99,11 +105,21 @@ if __name__ == "__main__":
         # print("collision_loss", collision_loss.item())
         # print("hand_orientation_loss: ", hand_orientation_loss.item())
 
-        pbar.set_description(f"loss:, {loss.item()}")
+        pbar.set_description(f"loss: {loss.item()}")
         history_losses.append(loss.item())
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+
+    #     if loss.item() < best_loss:
+    #         best_loss = loss.item()
+    #         best_model_state = copy.deepcopy(model.state_dict())
+        
+
+    # # After training, load the best state
+    # if best_model_state is not None:
+    #     model.load_state_dict(best_model_state)
+    #     print(f"Best loss: {best_loss}")
 
   
     with torch.no_grad():
@@ -127,7 +143,7 @@ if __name__ == "__main__":
     
     path_g1_motion_capture = os.path.join(DATA_ROOT, "motion/g1/motion_capture")
     Path(path_g1_motion_capture).mkdir(parents=True, exist_ok=True)
-    with open(os.path.join(path_g1_motion_capture, filename.split("/")[-1][:-4] + "_collosion2.pickle"), "wb") as file:
+    with open(os.path.join(path_g1_motion_capture, filename.split("/")[-1][:-4] + sys.argv[2] + ".pickle"), "wb") as file:
         pickle.dump(data_dict, file)
     
 
@@ -145,4 +161,4 @@ if __name__ == "__main__":
     # ### vis motion
     # ### press esc to quit plt visualization
 
-    vis_kinematic_result(os.path.join(DATA_ROOT,"motion/g1/motion_capture", filename.split("/")[-1][:-4] + ".pickle"), dataset="motion_capture", robot="g1_inspirehands", correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)
+    # vis_kinematic_result(os.path.join(DATA_ROOT,"motion/g1/motion_capture", filename.split("/")[-1][:-4] + ".pickle"), dataset="motion_capture", robot="g1_inspirehands", correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)

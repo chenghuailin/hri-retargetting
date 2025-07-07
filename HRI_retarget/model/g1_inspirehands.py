@@ -35,28 +35,28 @@ class G1_Inspirehands_Motion_Model(G1_Base_Motion_Model):
         self.init_angles = torch.zeros(self.batch_size, self.dof)
 
         self.dof_max_limits = torch.from_numpy(np.array([
-                [-2.530, 2.879], ## left_hip_pitch
-                [-0.523, 2.967], ## left_hip_roll
-                [-0.087267, 2.757], ## left_hip_yaw
-                [-0.087267, 2.879], ## left_knee
-                [-0.87267, 0.523], ## left_ankle_pitch
-                [-0.2618, 0.2618], ## left_ankle_roll
-                [-2.5307, 2.8798], ## right_hip_pitch
-                [-2.9671, 0.5236], ## right_hip_roll
-                [-2.7576, 2.7576], ## right_hip_yaw
-                [-0.087267, 2.8798], ## right_knee
-                [-0.87267, 0.5236], ## right_ankle_pitch
-                [-0.2618, 0.2618], ## right_ankle_roll
-                [-2.618, 2.618], ## waist_yaw
-                [-0.52, 0.52], ## waist_roll
-                [-0.52, 0.52], ## waist_pitch
-                [-3.0892, 2.6704], ## left_shoulder_pitch
-                [-1.5882, 2.2515], ## left_should_roll
-                [-2.618, 2.618], ## left_shoulder_yaw
-                [-1.0472, 2.0944], ## left_elbow
-                [-1.972222054, 1.972222054], ## left_wrist_roll
-                [-1.614429558, 1.614429558], ##left_wrist_pitch
-                [-1.614429558, 1.614429558], ## left_wrist_yaw
+                [-2.530, 2.879], ## left_hip_pitch 0
+                [-0.523, 2.967], ## left_hip_roll 1
+                [-0.087267, 2.757], ## left_hip_yaw 2
+                [-0.087267, 2.879], ## left_knee 3
+                [-0.87267, 0.523], ## left_ankle_pitch 4
+                [-0.2618, 0.2618], ## left_ankle_roll 5
+                [-2.5307, 2.8798], ## right_hip_pitch 6
+                [-2.9671, 0.5236], ## right_hip_roll 7
+                [-2.7576, 2.7576], ## right_hip_yaw 8
+                [-0.087267, 2.8798], ## right_knee 9
+                [-0.87267, 0.5236], ## right_ankle_pitch 10
+                [-0.2618, 0.2618], ## right_ankle_roll 11
+                [-2.618, 2.618], ## waist_yaw 12
+                [-0.52, 0.52], ## waist_roll 13
+                [-0.52, 0.52], ## waist_pitch 14
+                [-3.0892, 2.6704], ## left_shoulder_pitch 15
+                [-1.5882, 2.2515], ## left_should_roll 16
+                [-2.618, 2.618], ## left_shoulder_yaw 17
+                [-1.0472, 2.0944], ## left_elbow 18
+                [-1.972222054, 1.972222054], ## left_wrist_roll 19
+                [-1.614429558, 1.614429558], ##left_wrist_pitch 20
+                [-1.614429558, 1.614429558], ## left_wrist_yaw 21
                 [0, 1.7], ##L_index_proximal_joint 22
                 [0, 1.7], ##L_index_intermediate_joint 23
                 [0, 1.7], ##L_middle_proximal_joint 24

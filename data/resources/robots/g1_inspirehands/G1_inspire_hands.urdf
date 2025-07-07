@@ -15,7 +15,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/pelvis.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/pelvis.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -31,7 +31,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/pelvis_contour_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/pelvis_contour_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -40,7 +40,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/pelvis_contour_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/pelvis_contour_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -59,7 +59,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_pitch_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -68,7 +68,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -88,7 +88,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -97,7 +97,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -117,7 +117,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -126,7 +126,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_hip_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_hip_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -146,7 +146,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_knee_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_knee_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -155,7 +155,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_knee_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_knee_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -175,7 +175,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_ankle_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_ankle_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -184,7 +184,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_ankle_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_ankle_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -204,7 +204,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_ankle_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_ankle_roll_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -251,7 +251,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_pitch_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -260,7 +260,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -280,7 +280,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -289,7 +289,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -309,7 +309,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -318,7 +318,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_hip_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_hip_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -338,7 +338,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_knee_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_knee_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -347,7 +347,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_knee_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_knee_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -367,7 +367,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_ankle_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_ankle_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -376,7 +376,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_ankle_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_ankle_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -396,7 +396,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_ankle_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_ankle_roll_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -445,7 +445,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/waist_yaw_link_rev_1_0.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/waist_yaw_link_rev_1_0.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -468,7 +468,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/waist_roll_link_rev_1_0.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/waist_roll_link_rev_1_0.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -491,7 +491,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/torso_link_rev_1_0.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/torso_link_rev_1_0.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -500,7 +500,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/torso_link_rev_1_0.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/torso_link_rev_1_0.STL" />
       </geometry>
     </collision>
   </link>
@@ -527,7 +527,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/logo_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/logo_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -536,7 +536,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/logo_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/logo_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -551,7 +551,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/head_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/head_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="0.2 0.2 0.2 1" />
@@ -560,7 +560,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/head_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/head_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -581,7 +581,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/waist_support_link.STL"/>
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/waist_support_link.STL"/>
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1"/>
@@ -590,7 +590,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/waist_support_link.STL"/>
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/waist_support_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -639,7 +639,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_shoulder_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_shoulder_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -657,7 +657,7 @@
     <parent link="torso_link" />
     <child link="left_shoulder_pitch_link" />
     <axis xyz="0 1 0" />
-    <limit lower="-3.0892" upper="2.6704" effort="25" velocity="37" />
+    <limit lower="-3.0892" upper="2.6704" effort="25" velocity="30" />
   </joint>
   <link name="left_shoulder_roll_link">
     <inertial>
@@ -668,7 +668,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_shoulder_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_shoulder_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -697,7 +697,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_shoulder_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_shoulder_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -706,7 +706,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_shoulder_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_shoulder_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -726,7 +726,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_elbow_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_elbow_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -735,7 +735,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_elbow_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -762,7 +762,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -771,7 +771,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -791,7 +791,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -800,7 +800,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -820,7 +820,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -829,7 +829,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/left_wrist_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/left_wrist_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -842,7 +842,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_shoulder_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_shoulder_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -871,7 +871,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_shoulder_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_shoulder_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -900,7 +900,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_shoulder_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_shoulder_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -909,7 +909,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_shoulder_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_shoulder_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -929,7 +929,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_elbow_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_elbow_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -938,7 +938,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_elbow_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -965,7 +965,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_roll_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -974,7 +974,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_roll_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -994,7 +994,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_pitch_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -1003,7 +1003,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_pitch_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_pitch_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1023,7 +1023,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_yaw_link.STL" />
       </geometry>
       <material name="white">
         <color rgba="0.7 0.7 0.7 1" />
@@ -1032,7 +1032,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/right_wrist_yaw_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/right_wrist_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1051,7 +1051,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/L_hand_base_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/L_hand_base_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1060,7 +1060,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/L_hand_base_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/L_hand_base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1074,7 +1074,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link11_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link11_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1083,7 +1083,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link11_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link11_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1105,7 +1105,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link12_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link12_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1114,7 +1114,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link12_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link12_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1136,7 +1136,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link13_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link13_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1145,7 +1145,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link13_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link13_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1168,7 +1168,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link14_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link14_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1177,7 +1177,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link14_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link14_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1219,7 +1219,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link15_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link15_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1228,7 +1228,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link15_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link15_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1250,7 +1250,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link16_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link16_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1259,7 +1259,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link16_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link16_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1301,7 +1301,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link17_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link17_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1310,7 +1310,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link17_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link17_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1332,7 +1332,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link18_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link18_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1341,7 +1341,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link18_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link18_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1383,7 +1383,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link19_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link19_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1392,7 +1392,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link19_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link19_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1414,7 +1414,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link20_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link20_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1423,7 +1423,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link20_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link20_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1465,7 +1465,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link21_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link21_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1474,7 +1474,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link21_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link21_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1496,7 +1496,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link22_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link22_L.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1505,7 +1505,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link22_L.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link22_L.STL" />
       </geometry>
     </collision>
   </link>
@@ -1553,7 +1553,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/R_hand_base_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/R_hand_base_link.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1562,7 +1562,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/R_hand_base_link.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/R_hand_base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -1576,7 +1576,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link11_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link11_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1585,7 +1585,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link11_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link11_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1607,7 +1607,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link12_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link12_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1616,7 +1616,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link12_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link12_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1638,7 +1638,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link13_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link13_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1647,7 +1647,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link13_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link13_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1670,7 +1670,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link14_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link14_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1679,7 +1679,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link14_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link14_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1721,7 +1721,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link15_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link15_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1730,7 +1730,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link15_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link15_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1752,7 +1752,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link16_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link16_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1761,7 +1761,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link16_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link16_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1804,7 +1804,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link17_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link17_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1813,7 +1813,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link17_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link17_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1835,7 +1835,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link18_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link18_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1844,7 +1844,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link18_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link18_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1886,7 +1886,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link19_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link19_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1895,7 +1895,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link19_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link19_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1917,7 +1917,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link20_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link20_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1926,7 +1926,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link20_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link20_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1968,7 +1968,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link21_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link21_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -1977,7 +1977,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link21_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link21_R.STL" />
       </geometry>
     </collision>
   </link>
@@ -1999,7 +1999,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link22_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link22_R.STL" />
       </geometry>
       <material name="dark">
         <color rgba="1 1 1 1" />
@@ -2008,7 +2008,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="/home/chenghuailin/HRI_retarget/data/resources/robots/g1_inspirehands/meshes/Link22_R.STL" />
+        <mesh filename="/home/chenghuailin/hri-retargetting/data/resources/robots/g1_inspirehands/meshes/Link22_R.STL" />
       </geometry>
     </collision>
   </link>

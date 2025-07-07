@@ -5,13 +5,13 @@ Install:
     pip install -e .
 
 Usage:
-    python HRI_retarget/retarget/motioncapture_g1_inspirehands.py data/motion/human/motion_capture/defense_Skeleton.bvh
+    python HRI_retarget/retarget/motioncapture_g1_inspirehands.py data/motion/human/motion_capture/Jappelio_rays_Skeleton.bvh
 
-    the result pickle file will be saved in data/motion/human/motion_capture/defense_Skeleton_retarget.pickle by default
+    the result pickle file will be saved in data/motion/human/motion_capture/Jappelio_rays_Skeleton_retarget.pickle by default
 
 Visualization:
     bvh visualize: https://vrm-c.github.io/bvh2vrma/
-    g1 motion visualize: python HRI_retarget/utils/vis/rerun_kinematic.py --file_name data/motion/g1/motion_capture/defense_Skeleton.pickle
+    g1 motion visualize: python HRI_retarget/utils/vis/rerun_kinematic.py --file_name data/motion/g1/motion_capture/Jappelio_rays_Skeleton_test.pickle
 
 
 How to improve retarget result:

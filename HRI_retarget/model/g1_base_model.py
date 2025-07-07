@@ -26,6 +26,7 @@ class G1_Base_Motion_Model(nn.Module):
         self.batch_size = batch_size
         self.device = device
         self.gt_joint_positions = None
+        self.gt_joint_rotations = None
 
         self.dof = 29
 
@@ -102,6 +103,9 @@ class G1_Base_Motion_Model(nn.Module):
     def set_gt_joint_positions(self, gt_joint_positions):
         self.gt_joint_positions = gt_joint_positions.to(self.device)
 
+    def set_gt_joint_rotations(self, gt_joint_rotations):
+        self.gt_joint_rotations = gt_joint_rotations.to(self.device)
+
     def set_angles(self, joint_angles):
         self.joint_angles = nn.Parameter(joint_angles.to(self.device), requires_grad=True)  # (N, dof)
         return
@@ -152,6 +156,26 @@ class G1_Base_Motion_Model(nn.Module):
             ).sum(dim=-1).mean() * joint_corr[2]
         return joint_global_position_loss
     
+    def constraint_loss_Jappelio_rays(self):
+        """
+        This loss is used to enforce the constraints on the joint angles.
+        It is a soft constraint, which means that it will not force the joint angles to be within the limits,
+        but it will penalize the joint angles that are outside the limits.
+        """
+        loss = 0
+        id_left_shoulder_pitch = 15
+        id_left_shoulder_roll = 16
+        start_frame = 350
+        end_frame = 585
+
+        left_shoulder_pitch = self.joint_angles[start_frame:end_frame, id_left_shoulder_pitch]
+        left_shoulder_roll = self.joint_angles[start_frame:end_frame, id_left_shoulder_roll]
+
+        loss += (left_shoulder_pitch > 1.0) * (left_shoulder_pitch - 1.0)
+        loss += (left_shoulder_roll < -0.5) * (-0.5 - left_shoulder_roll)
+        loss = loss.sum(dim=-1).mean()
+
+        return loss
 
     def dof_limit_loss(self):
 

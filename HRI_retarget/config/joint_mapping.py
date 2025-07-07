@@ -383,9 +383,9 @@ BEAT_G1_INSPIREHANDS_CORRESPONDENCE = [
 MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE = [
     [MOTION_CAPTURE_LINKS.index("Spine"), G1_INSPIREHANDS_LINKS.index("pelvis"), 5],
     [MOTION_CAPTURE_LINKS.index("Head"), G1_INSPIREHANDS_LINKS.index("mid360_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("LeftArm"), G1_INSPIREHANDS_LINKS.index("left_shoulder_roll_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("LeftForeArm"), G1_INSPIREHANDS_LINKS.index("left_elbow_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("LeftHand"), G1_INSPIREHANDS_LINKS.index("L_hand_base_link"), 5],
+    [MOTION_CAPTURE_LINKS.index("LeftArm"), G1_INSPIREHANDS_LINKS.index("left_shoulder_roll_link"), 10],
+    [MOTION_CAPTURE_LINKS.index("LeftForeArm"), G1_INSPIREHANDS_LINKS.index("left_elbow_link"), 10],
+    [MOTION_CAPTURE_LINKS.index("LeftHand"), G1_INSPIREHANDS_LINKS.index("L_hand_base_link"), 10],
 
     [MOTION_CAPTURE_LINKS.index("RightArm"), G1_INSPIREHANDS_LINKS.index("right_shoulder_roll_link"), 5],
     [MOTION_CAPTURE_LINKS.index("RightForeArm"), G1_INSPIREHANDS_LINKS.index("right_elbow_link"), 5],
@@ -399,7 +399,6 @@ MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE = [
     [MOTION_CAPTURE_LINKS.index("RightLeg"), G1_INSPIREHANDS_LINKS.index("right_knee_link"), 5],
     [MOTION_CAPTURE_LINKS.index("LeftFoot"), G1_INSPIREHANDS_LINKS.index("left_ankle_roll_link"), 5],
     [MOTION_CAPTURE_LINKS.index("RightFoot"), G1_INSPIREHANDS_LINKS.index("right_ankle_roll_link"), 5],
-
 
 
     [MOTION_CAPTURE_LINKS.index("LeftHandThumb3"), G1_INSPIREHANDS_LINKS.index("L_thumb_tip"), 2],
