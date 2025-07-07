@@ -1,4 +1,5 @@
 ### dataset link names
+
 BBDB_LINKS = ['Hip', 'RightUpLeg', 'RightLeg', 'RightFoot', 'RightToeBase', 
               'RightToeBase_end', 'Spine', 'Spine1', 'RightShoulder', 'RightArm', 
               'RightForeArm', 'RightHand', 'RightHandIndex1', 'RightHandIndex2', 
@@ -35,7 +36,6 @@ BEAT_LINKS = ['Hips', 'Spine', 'Spine1', 'Spine2', 'Spine3', 'Neck',
                'LeftHandThumb4', 'RightUpLeg', 'RightLeg', 'RightFoot', 'RightForeFoot', 
                'RightToeBase', 'RightToeBaseEnd', 'LeftUpLeg', 'LeftLeg', 'LeftFoot', 
                'LeftForeFoot', 'LeftToeBase', 'LeftToeBaseEnd']
-
 
 MOTION_CAPTURE_LINKS = ['Hips', 'Spine', 'Spine1', 'Neck', 'Head', 
                         'LeftShoulder', 'LeftArm', 'LeftForeArm', 'LeftHand', 
@@ -109,11 +109,8 @@ SMPL_LINKS = [
 
 
 
-
-
-
-
 ### robot link names
+
 GALBOT_CHARLIE_LINKS = ['mobile_base', 'base_link_x', 'base_link_y', 'base_link_z',
     'base_link', 'omni_chassis_base_link', 'omni_chassis_leg_mount_link', 'leg_base_link',
     'leg_link1', 'leg_link2', 'leg_link3', 'leg_link4', 
@@ -251,8 +248,6 @@ G1_COLLISION = [
 
 ### mapping from dataset to robot
 
-
-
 SEG_GALBOT_CHARLIE_CORRESPONDENCE = [
     [SEG_LINKS.index("Hips"), GALBOT_CHARLIE_LINKS.index("leg_link3"), 5],
     [SEG_LINKS.index("Neck"), GALBOT_CHARLIE_LINKS.index("head_link1"), 5],
@@ -265,6 +260,7 @@ SEG_GALBOT_CHARLIE_CORRESPONDENCE = [
     [SEG_LINKS.index("RightElbow"), GALBOT_CHARLIE_LINKS.index("right_arm_link3"), 2],
     [SEG_LINKS.index("RightWrist"), GALBOT_CHARLIE_LINKS.index("right_arm_link5"), 3],
 ]
+
 
 SG_GALBOT_CHARLIE_CORRESPONDENCE = [
     [SG_LINKS.index("Spine"), GALBOT_CHARLIE_LINKS.index("leg_link3"), 5],
@@ -332,7 +328,6 @@ BBDB_G1_INSPIREHANDS_CORRESPONDENCE = [
 ]
 
 
-
 BEAT_G1_INSPIREHANDS_CORRESPONDENCE = [
     [BEAT_LINKS.index("Hips"), G1_INSPIREHANDS_LINKS.index("pelvis"), 5],
     [BEAT_LINKS.index("Head"), G1_INSPIREHANDS_LINKS.index("mid360_link"), 5],
@@ -385,8 +380,6 @@ BEAT_G1_INSPIREHANDS_CORRESPONDENCE = [
 ]
 
 
-
-
 MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE = [
     [MOTION_CAPTURE_LINKS.index("Spine"), G1_INSPIREHANDS_LINKS.index("pelvis"), 5],
     [MOTION_CAPTURE_LINKS.index("Head"), G1_INSPIREHANDS_LINKS.index("mid360_link"), 5],
@@ -420,7 +413,6 @@ MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE = [
 ]
 
 
-
 SG_G1_CORRESPONDENCE = [
     [SG_LINKS.index("Spine"), G1_LINKS.index("pelvis"), 1],
     [SG_LINKS.index("Head"), G1_LINKS.index("mid360_link"), 1],
@@ -440,6 +432,7 @@ SG_G1_CORRESPONDENCE = [
     # [SG_LINKS.index("RightHand"), G1_LINKS.index("right_wrist_yaw_link"), 1],
     [SG_LINKS.index("RightHandMiddle3"), G1_LINKS.index("right_mid_finger_link"), 3],
 ]
+
 
 SG_G1_INSPIREHANDS_CORRESPONDENCE = [
     [SG_LINKS.index("Spine"), G1_INSPIREHANDS_LINKS.index("pelvis"), 1],
@@ -464,11 +457,6 @@ SG_G1_INSPIREHANDS_CORRESPONDENCE = [
 ]
 
 
-
-
-
-
-
 SMPL_G1_CORRESPONDENCE = [
     [SMPL_LINKS.index("Pelvis"), G1_LINKS.index("pelvis"), 1],
     [SMPL_LINKS.index("Head"), G1_LINKS.index("mid360_link"), 1],
@@ -489,6 +477,7 @@ SMPL_G1_CORRESPONDENCE = [
     [SMPL_LINKS.index("R_Ankle"), G1_LINKS.index("right_ankle_roll_link"), 1],
 
 ]
+
 
 SMPL_G1_FULLBODY_CORRESPONDENCE = [
     [SMPL_LINKS.index("Pelvis"), G1_LINKS.index("pelvis"), 1],
@@ -516,6 +505,8 @@ SMPL_G1_FULLBODY_CORRESPONDENCE = [
     [SMPL_LINKS.index("R_Wrist"), G1_LINKS.index("right_rubber_hand"), 3],
 
 ]
+
+
 
 # Add the links for dex_retargeting
 BBDB_LEFT_HAND_LINK = {

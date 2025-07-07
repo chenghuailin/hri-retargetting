@@ -504,7 +504,7 @@ def Get_bvh_joint_pos_and_Rot(filename, link_list=SG_LINKS):
     joints_saved_angles = skeleton_data[5]
     print("joints: ", joints)
     
-    # 2. convert joints_rotations to torch, and reshape it to (batch, link_num,3)
+    # 2. convert joints_rotations to torch, and reshape it to (batch, link_num, 3)
     frame_skips = 1
     joints_rotations = joints_rotations[::frame_skips,:]
     frame_num = joints_rotations.shape[0]
@@ -513,13 +513,13 @@ def Get_bvh_joint_pos_and_Rot(filename, link_list=SG_LINKS):
     # 3. send the batch joint rotations to the func
     # joint_coords_full = _calculate_frame_joint_positions_in_local_space_parallel(
     #     joints, joints_offsets, joints_rotations_batch, joints_saved_angles, joints_hierarchy
-    # )
+    # )                                                              
     joint_coords_full, joint_rot_full = _calculate_local_pos_and_Rot(
         joints, joints_offsets, joints_rotations_batch, joints_saved_angles, joints_hierarchy
     )
     
     joint_name_to_index = {joint: idx for idx, joint in enumerate(joints)}
-
+                            
     link_indices = [joint_name_to_index[name] for name in link_list]
     return joint_coords_full[:, link_indices, :] / 100, joint_rot_full[:, link_indices, :, :]
     # return joint_coords_full / 100

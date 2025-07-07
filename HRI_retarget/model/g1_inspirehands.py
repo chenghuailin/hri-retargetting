@@ -306,14 +306,17 @@ class G1_Inspirehands_Motion_Model(G1_Base_Motion_Model):
         # print("dist: ",dist)
         return dist
     
-    def hand_orientation_loss(self):
+    def orientation_loss(self):
         # extract the orientation of left_hand, right_hand from the kinematic chain
         left_id = G1_INSPIREHANDS_LINKS.index("L_hand_base_link")
         right_id = G1_INSPIREHANDS_LINKS.index("R_hand_base_link")
+
         pred_link_global = self.forward_kinematics() # (N_frames, 52, 4, 4)
         loss = 0
         pred_left_hand_rot = pred_link_global[:,left_id][:,:3,:3]
         pred_right_hand_rot = pred_link_global[:,right_id][:,:3,:3]
+
+        # gt_left_hand_rot = 
         
         left_loss = self.calc_dist_between_rotations(pred_left_hand_rot, self.left_hand_rotations_world)
         right_loss = self.calc_dist_between_rotations(pred_right_hand_rot, self.right_hand_rotations_world)
