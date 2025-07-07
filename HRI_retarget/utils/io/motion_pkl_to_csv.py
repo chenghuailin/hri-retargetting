@@ -23,7 +23,7 @@ def load_motion_pkl_as_csv_data(input_pkl_path):
     match robot_name:
         case "g1_inspirehands":
             csv_data = np.zeros((data["angles"].shape[0], 60))
-            csv_data[:, :3] = data["global_translation"]
+            csv_data[:, :3] = data["global_translation"].reshape(-1, 3)
             csv_data[:, 3:7] = vec6d_to_quat(torch.tensor(data['global_rotation'])).numpy()
             csv_data[:, 7:] = data["angles"]
         case "g1_15":

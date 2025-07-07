@@ -392,13 +392,13 @@ MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE = [
     [MOTION_CAPTURE_LINKS.index("RightHand"), G1_INSPIREHANDS_LINKS.index("R_hand_base_link"), 5],
 
 
-    [MOTION_CAPTURE_LINKS.index("LeftUpLeg"), G1_INSPIREHANDS_LINKS.index("left_hip_pitch_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("RightUpLeg"), G1_INSPIREHANDS_LINKS.index("right_hip_pitch_link"),5],
+    [MOTION_CAPTURE_LINKS.index("LeftUpLeg"), G1_INSPIREHANDS_LINKS.index("left_hip_pitch_link"), 7],
+    [MOTION_CAPTURE_LINKS.index("RightUpLeg"), G1_INSPIREHANDS_LINKS.index("right_hip_pitch_link"),7],
    
-    [MOTION_CAPTURE_LINKS.index("LeftLeg"), G1_INSPIREHANDS_LINKS.index("left_knee_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("RightLeg"), G1_INSPIREHANDS_LINKS.index("right_knee_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("LeftFoot"), G1_INSPIREHANDS_LINKS.index("left_ankle_roll_link"), 5],
-    [MOTION_CAPTURE_LINKS.index("RightFoot"), G1_INSPIREHANDS_LINKS.index("right_ankle_roll_link"), 5],
+    [MOTION_CAPTURE_LINKS.index("LeftLeg"), G1_INSPIREHANDS_LINKS.index("left_knee_link"), 7],
+    [MOTION_CAPTURE_LINKS.index("RightLeg"), G1_INSPIREHANDS_LINKS.index("right_knee_link"), 7],
+    [MOTION_CAPTURE_LINKS.index("LeftFoot"), G1_INSPIREHANDS_LINKS.index("left_ankle_roll_link"), 10],
+    [MOTION_CAPTURE_LINKS.index("RightFoot"), G1_INSPIREHANDS_LINKS.index("right_ankle_roll_link"), 10],
 
 
     [MOTION_CAPTURE_LINKS.index("LeftHandThumb3"), G1_INSPIREHANDS_LINKS.index("L_thumb_tip"), 2],
