@@ -47,25 +47,38 @@ def load_motion_pkl_as_csv_data(input_pkl_path):
     return csv_data
 
 def pkl_to_csv(input_path, output_path):
-    csv_data = load_motion_pkl_as_csv_data(input_path)
 
-    
+    csv_data = load_motion_pkl_as_csv_data(input_path)
     np.savetxt(output_path, csv_data, delimiter=',', fmt='%.8f')
 
-
+def pkl_to_npz( input_path, output_path=None):
+    
+    data = load_motion_pkl_as_csv_data( input_path )
+    np.savez(output_path, data=data)
 
 
     
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser()
+#     # parser.add_argument('--pkl', type=str, help="File name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.pickle"))
+#     # parser.add_argument('--csv', type=str, help="csv file name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.csv"))
+#     parser.add_argument('--pkl', type=str, help="File name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.pickle"))
+#     parser.add_argument('--csv', type=str, help="csv file name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.csv"))
+#     args = parser.parse_args()
+
+#     pkl_to_csv(args.pkl, args.csv)
+#     # csv_to_pkl(args.csv, args.pkl)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--pkl', type=str, help="File name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.pickle"))
     parser.add_argument('--csv', type=str, help="csv file name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.csv"))
+    # parser.add_argument('--pkl', type=str, help="File name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.pickle"))
+    # parser.add_argument('--npz', type=str, help="csv file name", default=os.path.join(DATA_ROOT,"motion/g1/SG/output.npz"))
     args = parser.parse_args()
 
     pkl_to_csv(args.pkl, args.csv)
     # csv_to_pkl(args.csv, args.pkl)
-
-
-
 
 

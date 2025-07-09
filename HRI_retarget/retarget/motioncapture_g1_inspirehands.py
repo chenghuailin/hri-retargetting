@@ -46,19 +46,19 @@ if __name__ == "__main__":
 
     filename = sys.argv[1]
     # bvh_joint_local_coord_pos, bvh_joint_local_coord_rot = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
-    # bvh_joint_local_coord_pos, _ = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
-    bvh_joint_global_coord_pos = Get_bvh_joint_global_pos(filename, link_list = MOTION_CAPTURE_LINKS)
+    bvh_joint_local_coord_pos, _ = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
+    # bvh_joint_global_coord_pos = Get_bvh_joint_global_pos(filename, link_list = MOTION_CAPTURE_LINKS)
 
 
-    # num_frames = len(bvh_joint_local_coord_pos)
-    num_frames = len(bvh_joint_global_coord_pos)
+    num_frames = len(bvh_joint_local_coord_pos)
+    # num_frames = len(bvh_joint_global_coord_pos)
     print("Num of frames: ", num_frames)
     
     model = G1_Inspirehands_Motion_Model(batch_size=num_frames, joint_correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)
 
     rot_batch = torch.from_numpy(rot).view(1,3,3).repeat(num_frames,1,1).type(torch.float)
-    # model.set_gt_joint_positions(torch.bmm(bvh_joint_local_coord_pos, rot_batch.transpose(1,2)))
-    model.set_gt_joint_positions(torch.bmm(bvh_joint_global_coord_pos,rot_batch.transpose(1,2)))
+    model.set_gt_joint_positions(torch.bmm(bvh_joint_local_coord_pos, rot_batch.transpose(1,2)))
+    # model.set_gt_joint_positions(torch.bmm(bvh_joint_global_coord_pos,rot_batch.transpose(1,2)))
     # model.set_gt_joint_positions(bvh_joint_local_coord @ rot.T)
     print("Links of robot: ", model.chain.get_link_names())
     print(model.global_trans)
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     # best_loss = float('inf')
     # best_model_state = None
     
-    pbar = tqdm(range(200))
+    pbar = tqdm(range(2000))
     for epoch in pbar:
         
         ### normalize
@@ -90,7 +90,7 @@ if __name__ == "__main__":
         # elbow_loss = model.elbow_loss()
         
         loss_dict = {
-            "joint_global_position_loss": [2.5, joint_global_position_loss],
+            "joint_global_position_loss": [2.0, joint_global_position_loss],
             "joint_local_velocity_loss": [1.0, joint_local_velocity_loss],
             "joint_local_accel_loss": [0.5, joint_local_accel_loss],
             "dof_limit_loss": [1.0, dof_limit_loss],
