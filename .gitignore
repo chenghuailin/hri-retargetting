@@ -1,3 +1,5 @@
 HRI_retarget/**/__pycache__
 **.py[cod]
 HRI_retarget.egg-info
+log
+data/motion/g1/motion_capture
