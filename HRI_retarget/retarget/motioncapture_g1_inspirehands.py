@@ -36,7 +36,7 @@ rot = np.array([[0,0,1],
 left_hand_to_inspire = np.array([[1,0,0],[0,0,1],[0,-1,0]])
 right_hand_to_inspire = np.array([[-1,0,0],[0,0,1],[0,1,0]])
 config_file_path = os.path.join(DATA_ROOT, "resources/robots/g1_inspirehands/inspire_hand.yml")
-default_urdf_dir = os.path.join(DATA_ROOT,"resources/robots/g1_inspirehands")
+default_urdf_dir = os.path.join(DATA_ROOT, "resources/robots/g1_inspirehands")
 
 if __name__ == "__main__":
 
@@ -46,12 +46,13 @@ if __name__ == "__main__":
 
     filename = sys.argv[1]
     # bvh_joint_local_coord_pos, bvh_joint_local_coord_rot = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
-    bvh_joint_local_coord_pos, _ = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
+    bvh_joint_local_coord_pos, _, bvh_root_pos = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
     # bvh_joint_global_coord_pos = Get_bvh_joint_global_pos(filename, link_list = MOTION_CAPTURE_LINKS)
 
 
     num_frames = len(bvh_joint_local_coord_pos)
     # num_frames = len(bvh_joint_global_coord_pos)
+
     print("Num of frames: ", num_frames)
     
     model = G1_Inspirehands_Motion_Model(batch_size=num_frames, joint_correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)
@@ -60,6 +61,7 @@ if __name__ == "__main__":
     model.set_gt_joint_positions(torch.bmm(bvh_joint_local_coord_pos, rot_batch.transpose(1,2)))
     # model.set_gt_joint_positions(torch.bmm(bvh_joint_global_coord_pos,rot_batch.transpose(1,2)))
     # model.set_gt_joint_positions(bvh_joint_local_coord @ rot.T)
+
     print("Links of robot: ", model.chain.get_link_names())
     print(model.global_trans)
     # import ipdb;ipdb.set_trace()
@@ -129,7 +131,7 @@ if __name__ == "__main__":
   
     with torch.no_grad():
         pred_joint_angles = model.joint_angles.detach().cpu().numpy()
-        global_rotation = model.global_rot.detach().cpu().numpy()
+        # global_rotation = model.global_rot.detach().cpu().numpy()
         global_translation = model.global_trans.detach().cpu().numpy()
         scale = model.scale.detach().cpu().numpy()
         
@@ -139,7 +141,7 @@ if __name__ == "__main__":
         "reference_motion_pth": filename,
         "robot_name": "g1_inspirehands",
         "angles": pred_joint_angles,
-        "global_rotation": global_rotation,
+        "global_rotation": bvh_root_rot,
         "global_translation": global_translation,
         "scale": scale,
     }

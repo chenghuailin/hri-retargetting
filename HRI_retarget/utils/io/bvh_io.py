@@ -462,20 +462,20 @@ def Draw_bvh(joints, joints_offsets, joints_hierarchy, root_positions, joints_ro
         for joint in joints:
             if joint == joints[0]: continue #skip root joint
             parent_joint = joints_hierarchy[joint][0]
-            plt.plot(xs = [local_pos[parent_joint][0], local_pos[joint][0]],
-                     zs = [local_pos[parent_joint][1], local_pos[joint][1]],
-                     ys = [local_pos[parent_joint][2], local_pos[joint][2]], c = 'blue', lw = 2.5)
+            # plt.plot(xs = [local_pos[parent_joint][0], local_pos[joint][0]],
+            #          zs = [local_pos[parent_joint][1], local_pos[joint][1]],
+            #          ys = [local_pos[parent_joint][2], local_pos[joint][2]], c = 'blue', lw = 2.5)
 
-            #uncomment here if you want to see the world coords. If nothing appears on screen, change the axis limits below!
-            # plt.plot(xs = [world_pos[parent_joint][0], world_pos[joint][0]],
-            #          zs = [world_pos[parent_joint][1], world_pos[joint][1]],
-            #          ys = [world_pos[parent_joint][2], world_pos[joint][2]], c = 'red', lw = 2.5)
+            # uncomment here if you want to see the world coords. If nothing appears on screen, change the axis limits below!
+            plt.plot(xs = [world_pos[parent_joint][0], world_pos[joint][0]],
+                     zs = [world_pos[parent_joint][1], world_pos[joint][1]],
+                     ys = [world_pos[parent_joint][2], world_pos[joint][2]], c = 'red', lw = 2.5)
 
         #Depending on the file, the axis limits might be too small or too big. Change accordingly.
-        ax.set_axis_off()
-        ax.set_xlim(-0.6*figure_limit, 0.6*figure_limit)
-        ax.set_ylim(-0.6*figure_limit, 0.6*figure_limit)
-        ax.set_zlim(-0.2*figure_limit, 1.*figure_limit)
+        # ax.set_axis_off()
+        # ax.set_xlim(-0.6*figure_limit, 0.6*figure_limit)
+        # ax.set_ylim(-0.6*figure_limit, 0.6*figure_limit)
+        # ax.set_zlim(-0.2*figure_limit, 1.*figure_limit)
         plt.title('frame: ' + str(i))
         plt.pause(0.001)
         ax.cla()

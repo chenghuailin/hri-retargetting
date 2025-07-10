@@ -313,6 +313,7 @@ def Draw_bvh(joints, joints_offsets, joints_hierarchy, root_positions, joints_ro
         ax.cla()
 
     pass
+
 def Get_bvh_joint_local_coord(filename, link_list=SEG_LINKS):
     skeleton_data = ProcessBVH(filename)
 
@@ -521,9 +522,11 @@ def Get_bvh_joint_pos_and_Rot(filename, link_list=SG_LINKS):
     joint_name_to_index = {joint: idx for idx, joint in enumerate(joints)}
                             
     link_indices = [joint_name_to_index[name] for name in link_list]
-    return joint_coords_full[:, link_indices, :] / 100, joint_rot_full[:, link_indices, :, :]
+    return joint_coords_full[:, link_indices, :] / 100,  joint_rot_full[:, link_indices, :, :], \
+            root_positions / 100
     # return joint_coords_full / 100
 
+# Unfinished, don't use it
 def Get_bvh_joint_global_pos(filename, link_list=SG_LINKS):
     # 1. preprocess
     skeleton_data = ProcessBVH(filename)
@@ -568,8 +571,6 @@ def Get_bvh_joint_angles(filename, link_list=SG_LINKS):
     frame_num = joints_rotations.shape[0]
     joints_rotations_batch = torch.from_numpy(joints_rotations).view([frame_num,-1,3])
     return joints, joints_rotations_batch
-    
-    
     
     
     
