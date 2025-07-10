@@ -1,3 +1,5 @@
+# retarget_humanoid
+
 This is a motion retargetting project, adapted from https://github.com/ritsu-a/HRI_retarget/tree/galbot specifically for humanoid motion retargetting, especially for ultraman posture
 
 Install: 
