@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     filename = sys.argv[1]
     # bvh_joint_local_coord_pos, bvh_joint_local_coord_rot = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
-    bvh_joint_local_coord_pos, _, bvh_root_pos = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
+    bvh_joint_local_coord_pos, _, bvh_root_pos, bvh_root_quat = Get_bvh_joint_pos_and_Rot(filename, link_list = MOTION_CAPTURE_LINKS)
     # bvh_joint_global_coord_pos = Get_bvh_joint_global_pos(filename, link_list = MOTION_CAPTURE_LINKS)
 
 
@@ -54,16 +54,19 @@ if __name__ == "__main__":
     # num_frames = len(bvh_joint_global_coord_pos)
 
     print("Num of frames: ", num_frames)
-    
-    model = G1_Inspirehands_Motion_Model(batch_size=num_frames, joint_correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)
 
     rot_batch = torch.from_numpy(rot).view(1,3,3).repeat(num_frames,1,1).type(torch.float)
+    bvh_root_pos = torch.from_numpy(bvh_root_pos).view( num_frames, 1, 3)
+    bvh_root_pos = torch.bmm( bvh_root_pos,  rot_batch.transpose(1,2)) 
+    
+    model = G1_Inspirehands_Motion_Model(batch_size=num_frames, global_trans=bvh_root_pos, global_rot=bvh_root_quat, joint_correspondence=MOTION_CAPTURE_G1_INSPIREHANDS_CORRESPONDENCE)
+
     model.set_gt_joint_positions(torch.bmm(bvh_joint_local_coord_pos, rot_batch.transpose(1,2)))
     # model.set_gt_joint_positions(torch.bmm(bvh_joint_global_coord_pos,rot_batch.transpose(1,2)))
     # model.set_gt_joint_positions(bvh_joint_local_coord @ rot.T)
 
     print("Links of robot: ", model.chain.get_link_names())
-    print(model.global_trans)
+    # print(model.global_trans)
     # import ipdb;ipdb.set_trace()
 
     optimizer = torch.optim.Adam(model.parameters(), lr=5e-2)
@@ -73,7 +76,7 @@ if __name__ == "__main__":
     # best_loss = float('inf')
     # best_model_state = None
     
-    pbar = tqdm(range(2000))
+    pbar = tqdm(range(3000))
     for epoch in pbar:
         
         ### normalize
@@ -97,8 +100,8 @@ if __name__ == "__main__":
             "joint_local_accel_loss": [0.5, joint_local_accel_loss],
             "dof_limit_loss": [1.0, dof_limit_loss],
             # "orientation_loss": [0.3, orientation_loss],
-            "collision_loss": [1.0, collision_loss],
-            "constraint_loss": [1.0, constraint_loss],
+            "collision_loss": [1.5, collision_loss],
+            "constraint_loss": [1.5, constraint_loss],
         }
 
         loss = 0
@@ -141,8 +144,8 @@ if __name__ == "__main__":
         "reference_motion_pth": filename,
         "robot_name": "g1_inspirehands",
         "angles": pred_joint_angles,
-        "global_rotation": bvh_root_rot,
-        "global_translation": global_translation,
+        "global_rotation": bvh_root_quat,
+        "global_translation": bvh_root_pos,
         "scale": scale,
     }
 

@@ -5,6 +5,7 @@ import os
 import torch.nn as nn
 import torch.optim as optim
 import pytorch_kinematics as pk
+from scipy.spatial.transform import Rotation as R
 
 from HRI_retarget.utils.torch_utils.diff_quat import vec6d_to_matrix
 
@@ -26,7 +27,7 @@ from HRI_retarget.utils.vis.bvh_vis import calc_relative_transform
 
 
 class G1_Inspirehands_Motion_Model(G1_Base_Motion_Model):
-    def __init__(self, batch_size=1, joint_correspondence=BEAT_G1_INSPIREHANDS_CORRESPONDENCE, device="cuda:0"):
+    def __init__(self, batch_size=1, global_trans=None, global_rot=None, joint_correspondence=BEAT_G1_INSPIREHANDS_CORRESPONDENCE, device="cuda:0"):
         super(G1_Inspirehands_Motion_Model, self).__init__(batch_size=batch_size, joint_correspondence=joint_correspondence, device=device)
 
       
@@ -116,6 +117,13 @@ class G1_Inspirehands_Motion_Model(G1_Base_Motion_Model):
         self.scale = nn.Parameter(torch.ones(3).to(device), requires_grad=True)
         # self.global_rot = nn.Parameter(torch.eye(3)[:, :2].repeat(self.batch_size, 1, 1).to(device), requires_grad=True)
         # self.global_trans = nn.Parameter(torch.zeros(3).reshape(3, 1).repeat(self.batch_size, 1, 1).to(device), requires_grad=True)
+        
+        # global_rot_6d = np.zeros((global_rot.shape[0], 3, 2)) # (N_frame, 3, 2)
+        # for i in range(global_rot.shape[0]):
+        #     global_rot_6d[i] = np.array(R.from_quat(global_rot[i,:]).as_matrix()[:,:2])
+
+        # self.global_rot = nn.Parameter(torch.from_numpy(global_rot_6d).to(dtype=torch.float32,device=self.device), requires_grad=False)
+        # self.global_trans = nn.Parameter(global_trans.reshape(global_trans.shape[0],3,1).to(dtype=torch.float32,device=self.device), requires_grad=False)
 
         ### modify lowerbody scale to match robot and human shape
         self.lower_body_scale = torch.ones(3).requires_grad_(False).to(device)
@@ -180,6 +188,8 @@ class G1_Inspirehands_Motion_Model(G1_Base_Motion_Model):
 
         # R = vec6d_to_matrix(self.global_rot) * self.scale.repeat(self.batch_size, 3, 1) # (N_frame, 3, 3)
         # t = self.global_trans  # (N_frame, 3, 1)
+        # print(R.shape)
+        # print(t.shape)
         root_to_world = torch.cat((torch.cat((R, t), dim=-1), torch.tensor([0, 0, 0, 1]).reshape(1, 1, 4).repeat(self.batch_size, 1, 1).to(self.device)), dim=1)  # (N_frame, 4, 4)
         
         R_lower_body = vec6d_to_matrix(self.global_rot) * self.scale.repeat(self.batch_size, 3, 1) * self.lower_body_scale.repeat(self.batch_size, 3, 1)# (N_frame, 3, 3)

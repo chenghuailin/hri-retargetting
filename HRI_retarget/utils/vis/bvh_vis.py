@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 from HRI_retarget import DATA_ROOT
+from scipy.spatial.transform import Rotation as R
 
 
 from HRI_retarget.utils.io.bvh_io import ProcessBVH
@@ -520,10 +521,20 @@ def Get_bvh_joint_pos_and_Rot(filename, link_list=SG_LINKS):
     )
     
     joint_name_to_index = {joint: idx for idx, joint in enumerate(joints)}
+
+    # 4. get root rotation 
+    root_quat = np.zeros( (joints_rotations.shape[0], 4) )
+    rot = np.array([[0,0,1],
+                [1,0,0],
+                [0,1,0]])
+    for i in range( joints_rotations.shape[0] ):
+        temp_R = rot @ R.from_euler('xyz', joints_rotations[i, :3], degrees=True).as_matrix() @ rot.T
+        root_quat[i,:] = R.from_matrix(temp_R).as_quat()  
                             
     link_indices = [joint_name_to_index[name] for name in link_list]
-    return joint_coords_full[:, link_indices, :] / 100,  joint_rot_full[:, link_indices, :, :], \
-            root_positions / 100
+    return joint_coords_full[:, link_indices, :] / 100,  \
+            joint_rot_full[:, link_indices, :, :], \
+            root_positions / 100, root_quat
     # return joint_coords_full / 100
 
 # Unfinished, don't use it
